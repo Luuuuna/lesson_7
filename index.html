@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
         th {
             background: rgb(133, 205, 233);
         }
@@ -13,22 +18,28 @@
         td {
             background: rgb(243, 238, 230)
         }
+
         form {
             display: flex;
             flex-direction: column;
         }
-        input, fieldset, textarea, select {
+
+        input,
+        fieldset,
+        textarea,
+        select {
             max-width: 250px;
             margin-bottom: 10px;
         }
+
         label {
             display: flex;
-           
+
         }
+
         button {
             width: 100px;
         }
-      
     </style>
 </head>
 
@@ -83,6 +94,31 @@
                         <th>Формат работы</th>
                         <td colspan="2">&#10004; Очно или дистанционно</td>
                         <td>&#10004; Очно</td>
+                    </tr>
+                    <th>Дата начала</th>
+                    <td>✔ Каждый месяц</td>
+                    <td>✔ Май</td>
+                    <td>✔ Февраль, Август</td>
+                    </tr>
+                    <tr>
+                        <th>Оплата проезда</th>
+                        <td colspan="3">✔ Да</td>
+                    </tr>
+                    <tr>
+                        <th>Оплата проживания</th>
+                        <td>✕ Нет</td>
+                        <td colspan="2">✔ Да</td>
+                    </tr>
+                    <tr>
+                        <th>Занятость</th>
+                        <td colspan="2">✔ Гибкий график от 20 до 40 часов в неделю</td>
+                        <td>✔ Полная 5/2</td>
+                    </tr>
+                    <tr>
+                        <th>Продолжительность</th>
+                        <td>✔ от 3 до 6 меясцев</td>
+                        <td>✔ 3 месяца</td>
+                        <td>✔ 1 месяц</td>
                     </tr>
 
                 </tbody>
@@ -165,6 +201,13 @@
                     <button type="reset">Сбросить</button>
                     <button type="submit">Отправить</button>
                 </div>
+        </section>
+        <section>
+            <div class="map">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1781dd61a84b10748bbb8f494e1ba72bd11e81a078e7acc3a2d8bc5265044b0e&amp;source=constructor"
+                    width="100%" height="329" frameborder="0"></iframe>
+            </div>
         </section>
     </main>
     <footer>
